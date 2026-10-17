@@ -1,0 +1,75 @@
+Python 3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> 
+======================================================== RESTART: C:/Users/Gayatri/OneDrive/Documents/1BM24CS103_POS_BIS.LAB.py ========================================================
+ATTACK ALARM SYSTEM USING GENETIC ALGORITHM
+
+Training samples: 400
+Testing samples: 100
+
+Training the Genetic Algorithm...
+Generation: 0 | Best Fitness: 0.8761
+Generation: 10 | Best Fitness: 0.9217
+Generation: 20 | Best Fitness: 0.9248
+Generation: 30 | Best Fitness: 0.9273
+Generation: 40 | Best Fitness: 0.9273
+Generation: 50 | Best Fitness: 0.9284
+
+===== BEST DETECTION RULE =====
+packet_rate: 1.000
+failed_logins: 1.000
+payload_size: 0.208
+unusual_port: 0.791
+connection_count: 0.408
+Decision threshold: 0.469
+Training F1 score: 0.928
+
+===== DETECTION RESULTS =====
+Total test activities: 100
+True attacks detected: 45
+False alarms: 8
+Normal activities correctly identified: 40
+Missed attacks: 7
+Accuracy: 85.00%
+Precision: 84.91%
+Recall: 86.54%
+
+===== NETWORK MONITORING =====
+
+Activity 1
+packet_rate : 0.1
+failed_logins : 0.05
+payload_size : 0.2
+unusual_port : 0
+connection_count : 0.1
+Status: Normal activity
+Action: Allow normal network communication
+
+Activity 2
+packet_rate : 0.9
+failed_logins : 0.95
+payload_size : 0.7
+unusual_port : 1
+connection_count : 0.9
+ALERT: Possible attack detected!
+Action: Simulated blocking of activity
+
+Activity 3
+packet_rate : 0.3
+failed_logins : 0.85
+payload_size : 0.4
+unusual_port : 1
+connection_count : 0.65
+ALERT: Possible attack detected!
+Action: Simulated blocking of activity
+
+Activity 4
+packet_rate : 0.15
+failed_logins : 0.1
+payload_size : 0.2
+unusual_port : 0
+connection_count : 0.25
+Status: Normal activity
+Action: Allow normal network communication
+
+System execution completed.
